@@ -3,146 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pokhara University</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <title>Horizon University</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Custom styles */
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/random/1920x1080?campus');
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
         }
-        .card-hover:hover {
-            transform: translateY(-10px);
+        .gallery-img {
             transition: transform 0.3s ease;
         }
-        .gradient-text {
-            background: linear-gradient(90deg, #1e40af, #60a5fa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .parallax {
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
+        .gallery-img:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body class="font-sans bg-gray-50">
+<body class="font-sans text-gray-800">
     <!-- Header -->
-    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+    <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-3xl font-extrabold flex items-center">
-                <img src="https://source.unsplash.com/random/100x100?logo" alt="Logo" class="h-10 w-10 mr-2 rounded-full">
-                Horizon University
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50" alt="University Logo" class="h-12 mr-4">
+                <span class="text-2xl font-bold text-blue-800">Horizon University</span>
             </div>
-            <ul class="flex space-x-8 text-lg">
-                <li><a href="#home" class="hover:text-blue-300 transition duration-300">Home</a></li>
-                <li><a href="#about" class="hover:text-blue-300 transition duration-300">About</a></li>
-                <li><a href="#programs" class="hover:text-blue-300 transition duration-300">Programs</a></li>
-                <li><a href="#admissions" class="hover:text-blue-300 transition duration-300">Admissions</a></li>
-                <li><a href="#contact" class="hover:text-blue-300 transition duration-300">Contact</a></li>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-blue-600 hover:text-blue-800">Home</a></li>
+                <li><a href="#about" class="text-blue-600 hover:text-blue-800">About</a></li>
+                <li><a href="#programs" class="text-blue-600 hover:text-blue-800">Programs</a></li>
+                <li><a href="#gallery" class="text-blue-600 hover:text-blue-800">Gallery</a></li>
+                <li><a href="#contact" class="text-blue-600 hover:text-blue-800">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg h-screen flex items-center justify-center text-white text-center">
-        <div class="container mx-auto px-6 animate-fade-in">
-            <h1 class="text-6xl font-extrabold mb-6 gradient-text">Discover Horizon University</h1>
-            <p class="text-2xl mb-8 max-w-2xl mx-auto">Join a vibrant community dedicated to innovation, excellence, and global impact.</p>
-            <a href="#admissions" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-full text-lg transition duration-300">Apply Now</a>
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-4">Welcome to Horizon University</h1>
+            <p class="text-xl mb-8">Empowering the next generation through world-class education and innovation.</p>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Apply Now</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16 gradient-text">About Horizon University</h2>
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <img src="https://source.unsplash.com/random/800x600?campus" alt="Campus" class="rounded-2xl shadow-2xl w-full">
+            <h2 class="text-4xl font-bold text-center mb-12">About Us</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1516321310764-8d8c1ae268c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Campus" class="rounded-lg shadow-lg">
                 </div>
-                <div class="md:w-1/2">
-                    <p class="text-lg text-gray-700 mb-6">Founded in 1965, Horizon University is a beacon of academic excellence, fostering innovation and critical thinking. Our sprawling campus is home to cutting-edge facilities and a diverse, inclusive community.</p>
-                    <p class="text-lg text-gray-700 mb-6">With a commitment to sustainability and global citizenship, we prepare students to lead in a dynamic world.</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
-                        Learn More <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
+                <div class="md:w-1/2 md:pl-12">
+                    <p class="text-lg mb-4">Horizon University is a beacon of knowledge, fostering innovation and leadership. Established in 1965, we are committed to providing a transformative educational experience.</p>
+                    <p class="text-lg">Our state-of-the-art campus, renowned faculty, and vibrant community create an environment where students thrive and achieve their dreams.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Programs Section -->
-    <section id="programs" class="py-20 bg-gray-100">
+    <section id="programs" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16 gradient-text">Our Programs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover">
-                    <img src="https://source.unsplash.com/random/400x300?engineering" alt="Engineering" class="rounded-lg mb-6 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold mb-4">Engineering</h3>
-                    <p class="text-gray-600">Innovate with programs in mechanical, electrical, and computer engineering, designed for the future.</p>
+            <h2 class="text-4xl font-bold text-center mb-12">Our Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1516321310764-8d8c1ae268c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Engineering" class="h-40 mx-auto mb-4 rounded">
+                    <h3 class="text-2xl font-semibold mb-2">Engineering</h3>
+                    <p>Explore cutting-edge technologies and solve real-world problems with our engineering programs.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover">
-                    <img src="https://source.unsplash.com/random/400x300?business" alt="Business" class="rounded-lg mb-6 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold mb-4">Business</h3>
-                    <p class="text-gray-600">Master finance, marketing, and entrepreneurship with our globally recognized business school.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd674bf4ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Business" class="h-40 mx-auto mb-4 rounded">
+                    <h3 class="text-2xl font-semibold mb-2">Business</h3>
+                    <p>Develop leadership skills and entrepreneurial mindset with our globally recognized business courses.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover">
-                    <img src="https://source.unsplash.com/random/400x300?science" alt="Arts & Sciences" class="rounded-lg mb-6 w-full h-48 object-cover">
-                    <h3 class="text-2xl font-semibold mb-4">Arts & Sciences</h3>
-                    <p class="text-gray-600">Explore literature, environmental science, and more in our interdisciplinary programs.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1516321310764-8d8c1ae268c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Arts" class="h-40 mx-auto mb-4 rounded">
+                    <h3 class="text-2xl font-semibold mb-2">Arts & Humanities</h3>
+                    <p>Unleash your creativity and explore diverse cultures through our arts and humanities programs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Admissions Section -->
-    <section id="admissions" class="py-20 parallax" style="background-image: url('https://source.unsplash.com/random/1920x1080?study');">
-        <div class="container mx-auto px-6 text-center text-white">
-            <h2 class="text-5xl font-bold mb-12 gradient-text">Join Our Community</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Ready to shape your future? Discover our admission process, scholarships, and vibrant student life.</p>
-            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-full text-lg transition duration-300">Explore Admissions</a>
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Campus Life</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="https://images.unsplash.com/photo-1516321310764-8d8c1ae268c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Campus Event" class="gallery-img rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Library" class="gallery-img rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd674bf4ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sports" class="gallery-img rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1516321310764-8d8c1ae268c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lecture Hall" class="gallery-img rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Student Life" class="gallery-img rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd674bf4ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Campus Grounds" class="gallery-img rounded-lg shadow-lg">
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16 gradient-text">Get in Touch</h2>
-            <div class="flex flex-col md:flex-row gap-12">
-                <div class="md:w-1/2">
-                    <h3 class="text-3xl font-semibold mb-6">Contact Information</h3>
-                    <p class="text-lg text-gray-700 mb-4"><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i> 123 University Ave, Horizon City, HC 12345</p>
-                    <p class="text-lg text-gray-700 mb-4"><i class="fas fa-phone-alt mr-2 text-blue-600"></i> (123) 456-7890</p>
-                    <p class="text-lg text-gray-700 mb-4"><i class="fas fa-envelope mr-2 text-blue-600"></i> admissions@horizonuniversity.edu</p>
-                    <div class="flex space-x-4 mt-6">
-                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f text-2xl"></i></a>
-                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter text-2xl"></i></a>
-                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram text-2xl"></i></a>
-                    </div>
+            <h2 class="text-4xl font-bold text-center mb-12">Get in Touch</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                    <p class="mb-2"><strong>Address:</strong> 123 University Ave, Horizon City, HC 12345</p>
+                    <p class="mb-2"><strong>Email:</strong> admissions@horizonu.edu</p>
+                    <p class="mb-2"><strong>Phone:</strong> (123) 456-7890</p>
                 </div>
                 <div class="md:w-1/2">
-                    <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
-                        <h3 class="text-3xl font-semibold mb-6">Send Us a Message</h3>
-                        <div>
-                            <div class="mb-6">
-                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                                <input type="text" id="name" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-600">
-                            </div>
-                            <div class="mb-6">
-                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                                <input type="email" id="email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-600">
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                                <textarea id="message" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-600" rows="5"></textarea>
-                            </div>
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg w-full transition duration-300">Send Message</button>
-                        </div>
+                    <h3 class="text-2xl font-semibold mb-4">Send Us a Message</h3>
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg">
+                        <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg h-32"></textarea>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Submit</button>
                     </div>
                 </div>
             </div>
@@ -150,52 +126,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Horizon University</h3>
-                    <p class="text-gray-300">Empowering minds, shaping futures since 1965.</p>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
-                        <li><a href="#programs" class="text-gray-300 hover:text-white">Programs</a></li>
-                        <li><a href="#admissions" class="text-gray-300 hover:text-white">Admissions</a></li>
-                        <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Connect With Us</h3>
-                    <p class="text-gray-300 mb-4">Follow us for updates and news.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f text-2xl"></i></a>
-                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a>
-                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram text-2xl"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 text-center text-gray-300">
-                <p>© 2025 Horizon University. All rights reserved.</p>
-                <div class="mt-4">
-                    <a href="#" class="text-gray-300 hover:text-white mx-2">Privacy Policy</a>
-                    <a href="#" class="text-gray-300 hover:text-white mx-2">Terms of Service</a>
-                </div>
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Horizon University. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-blue-300">Facebook</a>
+                <a href="#" class="hover:text-blue-300">Twitter</a>
+                <a href="#" class="hover:text-blue-300">Instagram</a>
             </div>
         </div>
     </footer>
-
-    <!-- JavaScript for Smooth Scroll -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
